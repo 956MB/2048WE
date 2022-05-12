@@ -1,0 +1,44 @@
+/* 
+  Localizable.strings (JA)
+  2048WE
+
+  Created by Trevor Bays on 5/12/22.
+  
+*/
+
+"local_menu" = "メニュー";
+"local_top" = "上";
+"local_score" = "スコア";
+"local_best" = "一番";
+"local_moves" = "動き";
+"local_merges" = "マージ";
+"local_gameover" = "ゲームオーバー！";
+"local_continue" = "継続する";
+"local_restart" = "再起動";
+"local_tryagain" = "再試行";
+"local_challenges" = "課題";
+"local_howtoplay" = "遊び方";
+"local_clearscores" = "クリアスコア";
+"local_delete" = "消去";
+"local_clear" = "クリア";
+"local_nosaves" = "保存されたスコアはありません";
+"local_deleteconfirm" = "保存されたすべてのスコアを削除したいですか？";
+
+"local_0s" = "x0";
+"local_2s" = "x2";
+"local_4s" = "x4";
+"local_8s" = "x8";
+"local_16s" = "x16";
+"local_32s" = "x32";
+"local_64s" = "x64";
+"local_128s" = "x128";
+"local_256s" = "x256";
+"local_512s" = "x512";
+"local_1024s" = "x1024";
+"local_2048s" = "x2048";
+"local_4096s" = "x4096";
+"local_8192s" = "x8192";
+"local_16384s" = "x16384";
+"local_32768s" = "x32768";
+"local_65536s" = "x65536";
+"local_131072s" = "x131072";

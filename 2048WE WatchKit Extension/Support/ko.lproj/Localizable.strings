@@ -1,0 +1,44 @@
+/* 
+  Localizable.strings (KO)
+  2048WE
+
+  Created by Trevor Bays on 5/12/22.
+  
+*/
+
+"local_menu" = "메뉴";
+"local_top" = "맨 위";
+"local_score" = "점수";
+"local_best" = "베스트";
+"local_moves" = "움직입니다";
+"local_merges" = "병합";
+"local_gameover" = "게임 끝!";
+"local_continue" = "계속하다";
+"local_restart" = "재시작";
+"local_tryagain" = "다시 시도하십시오";
+"local_challenges" = "도전";
+"local_howtoplay" = "게임 방법";
+"local_clearscores" = "명확한 점수";
+"local_delete" = "삭제";
+"local_clear" = "분명한";
+"local_nosaves" = "저장된 점수가 없습니다";
+"local_deleteconfirm" = "저장된 모든 점수를 삭제 하시겠습니까?";
+
+"local_0s" = "x0";
+"local_2s" = "x2";
+"local_4s" = "x4";
+"local_8s" = "x8";
+"local_16s" = "x16";
+"local_32s" = "x32";
+"local_64s" = "x64";
+"local_128s" = "x128";
+"local_256s" = "x256";
+"local_512s" = "x512";
+"local_1024s" = "x1024";
+"local_2048s" = "x2048";
+"local_4096s" = "x4096";
+"local_8192s" = "x8192";
+"local_16384s" = "x16384";
+"local_32768s" = "x32768";
+"local_65536s" = "x65536";
+"local_131072s" = "x131072";

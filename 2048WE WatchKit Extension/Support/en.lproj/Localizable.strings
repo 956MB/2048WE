@@ -1,0 +1,44 @@
+/* 
+  Localizable.strings (EN)
+  2048WE
+
+  Created by Trevor Bays on 5/12/22.
+  
+*/
+
+"local_menu" = "MENU";
+"local_top" = "TOP";
+"local_score" = "SCORE";
+"local_best" = "BEST";
+"local_moves" = "MOVES";
+"local_merges" = "MERGES";
+"local_gameover" = "GAME OVER!";
+"local_continue" = "CONTINUE";
+"local_restart" = "RESTART";
+"local_tryagain" = "TRY AGAIN";
+"local_challenges" = "CHALLENGES";
+"local_howtoplay" = "HOW TO PLAY";
+"local_clearscores" = "CLEAR SCORES";
+"local_delete" = "DELETE";
+"local_clear" = "CLEAR";
+"local_nosaves" = "NO SAVED SCORES";
+"local_deleteconfirm" = "Are you sure you want to delete all saved scores?";
+
+"local_0s" = "x0";
+"local_2s" = "x2";
+"local_4s" = "x4";
+"local_8s" = "x8";
+"local_16s" = "x16";
+"local_32s" = "x32";
+"local_64s" = "x64";
+"local_128s" = "x128";
+"local_256s" = "x256";
+"local_512s" = "x512";
+"local_1024s" = "x1024";
+"local_2048s" = "x2048";
+"local_4096s" = "x4096";
+"local_8192s" = "x8192";
+"local_16384s" = "x16384";
+"local_32768s" = "x32768";
+"local_65536s" = "x65536";
+"local_131072s" = "x131072";
