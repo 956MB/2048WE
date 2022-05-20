@@ -38,6 +38,24 @@ struct MTitle: View {
     }
 }
 
+struct MToolbarItem: View {
+    @Binding var gameScreenActive : Bool
+    @Binding var text : String
+    var dim : Bool
+    var pad : Int
+
+    var body: some View {
+        if (self.gameScreenActive) {
+            HStack {
+                Spacer()
+                MTitle(text: self.$text, dim: self.dim)
+            }
+//            .padding(.leading, (self.endScreenActive || self.menuScreenActive) ? 110 : 0) // 105
+            .padding(.leading, self.pad)
+        }
+    }
+}
+
 struct MButton: View {
     var text : String
     var action : () -> Void

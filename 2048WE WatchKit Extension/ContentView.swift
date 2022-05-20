@@ -41,7 +41,7 @@ struct ContentView: View {
                     // LONG PRESS TO OPEN MENU
                     LongPressGesture(minimumDuration: 1.0)
                         .onEnded { _ in
-                            self.toggleScreen(&self.menuScreenActive, "local_menu".localized(), "")
+                            self.toggleScreen(&self.menuScreenActive, "", "")
                         }
                 )
                 .gesture(DragGesture(minimumDistance: 3.0, coordinateSpace: .local)
@@ -123,7 +123,7 @@ struct ContentView: View {
                 .indexViewStyle(.page(backgroundDisplayMode: .automatic))
                 .onChange(of: self.menuIndex) { idx in
                     // TODO: slow? slow changing?
-                    self.leftTitle = (idx == 0 ? "local_top".localized() : "local_menu".localized())
+//                    self.leftTitle = (idx == 0 ? "local_top".localized() : "local_menu".localized())
                 }
             }
         }
@@ -138,21 +138,13 @@ struct ContentView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             // MARK: - POTENTIAL HACK, setting confirmationAction position (right side) to empty hstack, the clock in the right is gone?? NOPE! the clock can be hidden, but i cant figure out how to make the nav bar background color clear so contents behind it arent blocked
-//            Spacer() // TODO: - WORKAROUND, toolbar bar leading space is a fixed width, so the whole hstack needs as much space to the right as possible
-            ToolbarItem(placement: .cancellationAction) {
-                HStack {
-                    Spacer()
-                    MTitle(text: self.$leftTitle, dim: true)
-                }
-                .padding(.leading, (self.endScreenActive || self.menuScreenActive) ? 105 : 0)
-            }
+            // TODO: - WORKAROUND, toolbar bar leading space is a fixed width, so the whole hstack needs as much space to the right as possible
             // TODO: BUG, right text holding score for some reason is a little bit lower than it should be when its reset to 0, and until the score goes above 10
+            ToolbarItem(placement: .cancellationAction) {
+                MToolbarItem(gameScreenActive: self.$gameScreenActive, text: self.$leftTitle, dim: true, pad: 0)
+            }
             ToolbarItem(placement: .confirmationAction) {
-                HStack {
-                    Spacer()
-                    MTitle(text: self.$rightTitle, dim: false)
-                }
-                .padding(.trailing, 20) // TODO: - WORKAROUND, need to give more padding than i want to make text not run off the right side BECAUSE FOR SOME REASON IT WILL NOT ALIGN RIGHT
+                MToolbarItem(gameScreenActive: self.$gameScreenActive, text: self.$rightTitle, dim: false, pad: 20)
             }
         }
     }
@@ -248,7 +240,7 @@ struct ContentView: View {
         self.endScreenActive = false
         self.menuScreenActive = false
         self.clearSavesActive = false
-        self.leftTitle = lTitle
+//        self.leftTitle = lTitle
         self.rightTitle = rTitle
         toggleScreen = true
     }
@@ -263,7 +255,7 @@ struct ContentView: View {
     }
     /// Ends game by switching to the end screen, then sending current game state to Defaults to save score
     func endGame() {
-        self.toggleScreen(&self.endScreenActive, "local_gameover".localized(), "")
+        self.toggleScreen(&self.endScreenActive, "", "")
         self.def.addSavedScore(self.gameScore, self.gameMoves, self.gameBoard.reduce([], +))
         self.gameState.endActive = self.endScreenActive
         self.def.saveGameState(0, 0, freshBoard())
