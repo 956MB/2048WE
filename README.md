@@ -1,1 +1,1 @@
-<img src="screenshots/screens.png" width="712">
+<img src="./screenshots/2048W.png" width="900">
