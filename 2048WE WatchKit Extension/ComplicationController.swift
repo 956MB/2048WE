@@ -8,13 +8,15 @@
 import ClockKit
 
 
-class ComplicationController: NSObject, CLKComplicationDataSource {
+final class ComplicationController: NSObject, CLKComplicationDataSource {
+
+    private lazy var shortcutProvider = ShortcutProvider()
     
     // MARK: - Complication Configuration
 
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
         let descriptors = [
-            CLKComplicationDescriptor(identifier: "complication", displayName: "2048WE", supportedFamilies: CLKComplicationFamily.allCases)
+            CLKComplicationDescriptor(identifier: "complication", displayName: "2048WE", supportedFamilies: [.graphicCorner, .graphicCircular])
             // Multiple complication support can be added here with more descriptors
         ]
         
@@ -42,6 +44,12 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         // Call the handler with the current timeline entry
+//        switch complication.family {
+//        case .graphicCorner: handler(CLKComplicationTimelineEntry(date: Date(), complicationTemplate: shortcutProvider.getShortcutGraphicCorner()))
+//        case .graphicCircular: handler(CLKComplicationTimelineEntry(date: Date(), complicationTemplate: shortcutProvider.getShortcutGraphicCircular()))
+//        default: handler(nil)
+//        }
+
         handler(nil)
     }
     
@@ -54,6 +62,12 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
         // This method will be called once per supported complication, and the results will be cached
+//        switch complication.family {
+//        case .graphicCorner: handler(shortcutProvider.getShortcutGraphicCorner())
+//        case .graphicCircular: handler(shortcutProvider.getShortcutGraphicCircular())
+//        default: handler(nil)
+//        }
+
         handler(nil)
     }
 }

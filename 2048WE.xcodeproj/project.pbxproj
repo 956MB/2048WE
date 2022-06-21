@@ -10,13 +10,15 @@
 		683FBA26282A666100D7DB9F /* 2048WE WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 683FBA25282A666100D7DB9F /* 2048WE WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		683FBA2B282A666200D7DB9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 683FBA2A282A666200D7DB9F /* Assets.xcassets */; };
 		683FBA31282A666200D7DB9F /* 2048WE WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 683FBA30282A666200D7DB9F /* 2048WE WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		683FBA36282A666200D7DB9F /* _048WEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683FBA35282A666200D7DB9F /* _048WEApp.swift */; };
+		683FBA36282A666200D7DB9F /* _2048WEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683FBA35282A666200D7DB9F /* _2048WEApp.swift */; };
 		683FBA38282A666200D7DB9F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683FBA37282A666200D7DB9F /* ContentView.swift */; };
 		683FBA3A282A666200D7DB9F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683FBA39282A666200D7DB9F /* NotificationController.swift */; };
 		683FBA3C282A666200D7DB9F /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683FBA3B282A666200D7DB9F /* NotificationView.swift */; };
 		683FBA3E282A666200D7DB9F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683FBA3D282A666200D7DB9F /* ComplicationController.swift */; };
 		683FBA40282A666300D7DB9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 683FBA3F282A666300D7DB9F /* Assets.xcassets */; };
 		683FBA43282A666300D7DB9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 683FBA42282A666300D7DB9F /* Preview Assets.xcassets */; };
+		68C09D3D286150A1006A015D /* ComplicationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C09D3C286150A1006A015D /* ComplicationViews.swift */; };
+		68C09D4028615632006A015D /* ShortcutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C09D3F28615632006A015D /* ShortcutProvider.swift */; };
 		68D1F84C282B7F3900E7A068 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D1F84B282B7F3900E7A068 /* Views.swift */; };
 		68D1F84E282B7F6200E7A068 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D1F84D282B7F6200E7A068 /* Util.swift */; };
 		68D1F850282CDC6F00E7A068 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D1F84F282CDC6F00E7A068 /* Objects.swift */; };
@@ -74,7 +76,7 @@
 		683FBA25282A666100D7DB9F /* 2048WE WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2048WE WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		683FBA2A282A666200D7DB9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		683FBA30282A666200D7DB9F /* 2048WE WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "2048WE WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		683FBA35282A666200D7DB9F /* _048WEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _048WEApp.swift; sourceTree = "<group>"; };
+		683FBA35282A666200D7DB9F /* _2048WEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _2048WEApp.swift; sourceTree = "<group>"; };
 		683FBA37282A666200D7DB9F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		683FBA39282A666200D7DB9F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		683FBA3B282A666200D7DB9F /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,8 @@
 		683FBA42282A666300D7DB9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		683FBA44282A666300D7DB9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		683FBA45282A666300D7DB9F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		68C09D3C286150A1006A015D /* ComplicationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationViews.swift; sourceTree = "<group>"; };
+		68C09D3F28615632006A015D /* ShortcutProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutProvider.swift; sourceTree = "<group>"; };
 		68D1F84B282B7F3900E7A068 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		68D1F84D282B7F6200E7A068 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		68D1F84F282CDC6F00E7A068 /* Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
@@ -136,21 +140,16 @@
 		683FBA34282A666200D7DB9F /* 2048WE WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				68C09D3B28615025006A015D /* Managers */,
+				68C09D3A28615006006A015D /* Views */,
 				68D1F856282D45C900E7A068 /* Support */,
 				68D1F853282D455900E7A068 /* Extensions */,
-				683FBA35282A666200D7DB9F /* _048WEApp.swift */,
-				683FBA37282A666200D7DB9F /* ContentView.swift */,
+				683FBA35282A666200D7DB9F /* _2048WEApp.swift */,
 				683FBA39282A666200D7DB9F /* NotificationController.swift */,
-				683FBA3B282A666200D7DB9F /* NotificationView.swift */,
 				683FBA3D282A666200D7DB9F /* ComplicationController.swift */,
-				683FBA3F282A666300D7DB9F /* Assets.xcassets */,
 				683FBA44282A666300D7DB9F /* Info.plist */,
 				683FBA45282A666300D7DB9F /* PushNotificationPayload.apns */,
 				683FBA41282A666300D7DB9F /* Preview Content */,
-				68D1F84B282B7F3900E7A068 /* Views.swift */,
-				68D1F84D282B7F6200E7A068 /* Util.swift */,
-				68D1F84F282CDC6F00E7A068 /* Objects.swift */,
-				68D1F851282CDD7D00E7A068 /* DefaultsManager.swift */,
 			);
 			path = "2048WE WatchKit Extension";
 			sourceTree = "<group>";
@@ -161,6 +160,34 @@
 				683FBA42282A666300D7DB9F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		68C09D3A28615006006A015D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68C09D3E28615618006A015D /* Complications */,
+				68D1F84B282B7F3900E7A068 /* Views.swift */,
+				683FBA3B282A666200D7DB9F /* NotificationView.swift */,
+				683FBA37282A666200D7DB9F /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		68C09D3B28615025006A015D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				68D1F851282CDD7D00E7A068 /* DefaultsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		68C09D3E28615618006A015D /* Complications */ = {
+			isa = PBXGroup;
+			children = (
+				68C09D3C286150A1006A015D /* ComplicationViews.swift */,
+				68C09D3F28615632006A015D /* ShortcutProvider.swift */,
+			);
+			path = Complications;
 			sourceTree = "<group>";
 		};
 		68D1F853282D455900E7A068 /* Extensions */ = {
@@ -174,6 +201,9 @@
 		68D1F856282D45C900E7A068 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				683FBA3F282A666300D7DB9F /* Assets.xcassets */,
+				68D1F84F282CDC6F00E7A068 /* Objects.swift */,
+				68D1F84D282B7F6200E7A068 /* Util.swift */,
 				68D1F85F282D460F00E7A068 /* Localizable.strings */,
 			);
 			path = Support;
@@ -315,14 +345,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68C09D4028615632006A015D /* ShortcutProvider.swift in Sources */,
 				683FBA3A282A666200D7DB9F /* NotificationController.swift in Sources */,
 				683FBA38282A666200D7DB9F /* ContentView.swift in Sources */,
 				68D1F850282CDC6F00E7A068 /* Objects.swift in Sources */,
 				68D1F84C282B7F3900E7A068 /* Views.swift in Sources */,
 				683FBA3E282A666200D7DB9F /* ComplicationController.swift in Sources */,
 				68D1F84E282B7F6200E7A068 /* Util.swift in Sources */,
-				683FBA36282A666200D7DB9F /* _048WEApp.swift in Sources */,
+				683FBA36282A666200D7DB9F /* _2048WEApp.swift in Sources */,
 				68D1F852282CDD7D00E7A068 /* DefaultsManager.swift in Sources */,
+				68C09D3D286150A1006A015D /* ComplicationViews.swift in Sources */,
 				68D1F855282D456B00E7A068 /* String+Ext.swift in Sources */,
 				683FBA3C282A666200D7DB9F /* NotificationView.swift in Sources */,
 			);
