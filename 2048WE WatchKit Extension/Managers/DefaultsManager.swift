@@ -123,7 +123,7 @@ class DefaultsManager: ObservableObject {
                 let saved = try decoder.decode([SavedScore].self, from: data)
                 return saved
             } catch {
-                print("Unable to Decode Notes (\(error))")
+                print("Unable to Decode SavedScores (\(error))")
             }
         }
         return []

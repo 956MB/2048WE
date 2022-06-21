@@ -42,7 +42,7 @@ struct MToolbarItem: View {
     @Binding var gameScreenActive : Bool
     @Binding var text : String
     var dim : Bool
-    var pad : Int
+    var pad : CGFloat
 
     var body: some View {
         if (self.gameScreenActive) {
@@ -87,7 +87,7 @@ struct MBoard: View {
             ForEach(0..<4) { row in
                 HStack {
                     ForEach(0..<4) { cell in
-                        MTile(number: board[row][cell], colors: cc[board[row][cell]]!)
+                        MTile(number: board[row][cell], colors: cellColors[board[row][cell]]!)
                     }
                 }
             }
@@ -145,7 +145,7 @@ struct MBox: View {
     var body: some View {
         VStack(spacing: 0) {
             Text(self.title)
-                .foregroundColor((textColor == -1 ? .white : Color(hex: cc[textColor]![0])))
+                .foregroundColor((textColor == -1 ? .white : Color(hex: cellColors[textColor]![0])))
                 .opacity((textColor == -1 ? 0.5 : 1.0))
             Text(self.value)
                 .fontWeight(.bold)

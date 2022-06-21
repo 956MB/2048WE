@@ -1,15 +1,18 @@
 {
   "images" : [
     {
+      "filename" : "2048-58_x_58.png",
       "idiom" : "watch",
       "scale" : "2x"
     },
     {
+      "filename" : "2048-52_x_52.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : "<=145"
     },
     {
+      "filename" : "2048-64_x_64.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : ">183"
